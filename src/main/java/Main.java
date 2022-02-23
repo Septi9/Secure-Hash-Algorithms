@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        Account account = new Account();
+        Access access = new Access();
         Scanner scanner = new Scanner(System.in);
         List<Account> users = new ArrayList<>();
 
@@ -15,8 +15,8 @@ public class Main {
             menuValue = scanner.nextInt();
 
             switch (menuValue) {
-                case 1 -> account.registration(users);
-                case 2 -> account.login(users);
+                case 1 -> access.registration(users);
+                case 2 -> access.login(users);
                 case 3 -> key = false;
                 default -> System.out.println("Wrong number");
             }
